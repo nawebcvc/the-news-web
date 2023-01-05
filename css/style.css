@@ -1,0 +1,73 @@
+@import url(fonts.css);
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --hover: #EF4423;
+    --red: #B71C1C;
+    --purple: #6A1B9A;
+    --violet: #303F9F;
+    --green: #00695C;
+    --not-white: #EDEDED;
+    --not-black: #3A3838;
+    --roboto-b: 'Robot_Bold';
+    --roboto-r: 'Robot_Regular';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    user-select: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.link {
+    font-family: var(--roboto-b);
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--not-black);
+}
+
+.link:hover {
+    color: var(--hover);
+    transition: 500ms;
+}
+
+.title {
+    font-family: var(--roboto-b);
+    font-size: 19px;
+    line-height: 22px;
+    color: var(--white);
+}
+
+.desc {
+    font-family: var(--roboto-r);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--not-white);
+}
+
+.title_black {
+    font-family: var(--roboto-b);
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--not-black);
+}
