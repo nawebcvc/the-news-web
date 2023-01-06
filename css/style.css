@@ -31,7 +31,6 @@ ul {
 
 body {
     user-select: none;
-    margin: 0 auto;
 }
 
 .container {
@@ -160,4 +159,54 @@ body {
 
 .header__mobile-img {
     display: none;
+}
+
+.cards .container {
+    display: flex;
+    max-width: unset;
+    padding: unset;
+    /* не понятно, у макета width 100процентов или имеет фиксированную ширину 1400пкс? */
+    /* если оно фиксирован то тут max-width нужно убрать т.к сам контейнер на вверху установлен max-width: 1400px! а также убрать padding*/
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    /* не понятно, у макета width 100процентов или имеет фиксированную ширину 1400пкс? */
+    /* если оно фиксирован то тут max-width: 350; должен быть! */
+}
+
+.card__img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.card:nth-child(1) {
+    background: var(--red);
+}
+
+.card:nth-child(2) {
+    background: var(--purple);
+}
+
+.card:nth-child(3) {
+    background: var(--violet);
+}
+
+.card:nth-child(4) {
+    background: var(--green);
+}
+
+.card__content:nth-child(even) {
+    padding: 8px 15px 15px;
+}
+
+.card__content:nth-child(odd) {
+    padding: 15px 15px 7px;
+}
+
+.card__content-title {
+    margin-bottom: 9px;
 }

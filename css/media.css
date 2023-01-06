@@ -36,11 +36,27 @@
     .header__desktop-img {
         object-fit: contain;
     }
+
+    .cards .container {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .card {
+        max-width: 450px;
+        width: 100%;
+    }
 }
 
 @media(max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+
+    .cards .container {
+        row-gap: 20px;
     }
 }
 
@@ -58,6 +74,12 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
+    }
+
+    .cards .container {
+        padding: 0 15px;
+        /* не понятно, у макета width 100процентов или имеет фиксированную ширину 1400пкс? */
+        /* ТУТ PADDING НЕ НАДО УБИРАТЬ, В МОБИЛЬНОЙ ВЕРСИИ ДИЗАЙН-КРАСОТА ЛОМАЕТСЯ :D */
     }
 }
 
