@@ -2,6 +2,40 @@
     .container {
         max-width: 960px;
     }
+
+    .header__menu {
+        display: flex;
+    }
+    
+    .header__list {
+        position: absolute;
+        top: 112px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 200px;
+        height: 300px;
+        z-index: 1;
+        transform: translateX(-200%);
+        transition: 600ms;
+    }
+
+    .header__menu:focus~.header__list {
+        transform: translateX(0);
+        background: url(../img/header-list.png);
+        /* или вариант с цветом: #ef4f2371 */
+    }
+
+    .header__link {
+        position: static;
+        padding: 12px 30px;
+        /* padding - просто мне понравилось */
+    }
+
+    .header__desktop-img {
+        object-fit: contain;
+    }
 }
 
 @media(max-width: 992px) {
@@ -13,6 +47,17 @@
 @media(max-width: 768px) {
     .container {
         max-width: 540px;
+    }
+
+    .header__desktop-img {
+        display: none;
+    }
+
+    .header__mobile-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
