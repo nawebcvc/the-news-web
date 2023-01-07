@@ -48,6 +48,22 @@
         max-width: 450px;
         width: 100%;
     }
+
+    .news__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news__block-desc {
+        max-width: 984px;
+        text-align: center;
+    }
+
+    .news__block-img {
+        max-width: 550px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media(max-width: 992px) {
@@ -80,6 +96,15 @@
         padding: 0 15px;
         /* не понятно, у макета width 100процентов или имеет фиксированную ширину 1400пкс? */
         /* ТУТ PADDING НЕ НАДО УБИРАТЬ, В МОБИЛЬНОЙ ВЕРСИИ ДИЗАЙН-КРАСОТА ЛОМАЕТСЯ :D */
+    }
+
+    .news__bg {
+        padding: 0 20px;
+    }
+
+    .block__desc-desktop {
+        display: none;
+        /* из-за слишком много текста */
     }
 }
 

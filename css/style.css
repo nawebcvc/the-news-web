@@ -9,7 +9,9 @@
     --violet: #303F9F;
     --green: #00695C;
     --not-white: #EBEBEB;
+    --not-white2: #EDEDED;
     --not-black: #3A3838;
+    --not-black2: #686868;
     --burger: #EF4E23;
     --roboto-b: 'Robot_Bold';
     --roboto-r: 'Robot_Regular';
@@ -34,7 +36,6 @@ body {
 }
 
 .container {
-    max-width: 1400px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -54,13 +55,6 @@ body {
     color: var(--white);
 }
 
-.desc {
-    font-family: var(--roboto-r);
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--not-white);
-}
-
 .title_black {
     font-family: var(--roboto-b);
     font-size: 22px;
@@ -68,8 +62,26 @@ body {
     color: var(--not-black);
 }
 
+.desc {
+    font-family: var(--roboto-r);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--not-white);
+}
+
+.desc_black {
+    font-family: var(--roboto-r);
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--not-black2);
+}
+
 .header {
     margin-bottom: 36px;
+}
+
+.header__desktop-img {
+    width: 100%;
 }
 
 .header .container {
@@ -161,6 +173,10 @@ body {
     display: none;
 }
 
+.cards {
+    margin-bottom: 40px;
+}
+
 .cards .container {
     display: flex;
     max-width: unset;
@@ -209,4 +225,43 @@ body {
 
 .card__content-title {
     margin-bottom: 9px;
+}
+
+.news .container {
+    padding: unset;
+    /* убрать padding если макет имеет фиксированную ширину */
+}
+
+.news__bg {
+    display: flex;
+    justify-content: center;
+    background: var(--not-white2);
+}
+
+.news__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news__block {
+    display: flex;
+    max-width: 1125px;
+    /* убрать padding если макет имеет фиксированную ширину */
+    width: 100%;
+}
+
+.news__block-img {
+    object-fit: contain;
+    margin-right: 30px;
+}
+
+.news__block-desc {
+    max-width: 540px;
+    /* убрать max-width если макет имеет фиксированную ширину */
+    width: 100%;
+    padding: 20px 0 31px;
+}
+
+.block__title {
+    margin-bottom: 30px;
 }
