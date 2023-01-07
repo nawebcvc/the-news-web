@@ -35,7 +35,6 @@
 
     .header__link:hover {
         color: var(--white);
-        transition: 500ms;
     }
 
     .header__desktop-img {
@@ -45,13 +44,11 @@
     .cards .container {
         justify-content: center;
         flex-wrap: wrap;
-        row-gap: 10px;
-        column-gap: 10px;
+        gap: 10px;
     }
 
     .card {
         max-width: 450px;
-        width: 100%;
     }
 
     .news__block {

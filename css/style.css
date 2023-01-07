@@ -41,11 +41,31 @@ body {
     margin: 0 auto;
 }
 
+.nav {
+    display: flex;
+    max-width: 1210px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0 15px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
 .link {
     font-family: var(--roboto-b);
     font-size: 18px;
     line-height: 21px;
     color: var(--not-black);
+    text-transform: uppercase;
 }
 
 .title {
@@ -91,18 +111,7 @@ body {
 }
 
 .header__nav {
-    display: flex;
-    max-width: 1210px;
-    width: 100%;
-    justify-content: space-between;
-    padding: 20px 0 15px;
     position: relative;
-}
-
-.header__logo {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
 }
 
 .header__logo span {
@@ -148,19 +157,13 @@ body {
     transform: rotate(90deg) translateY(14px) translateX(-17px);
 }
 
-.header__list {
-    display: flex;
-    align-items: center;
-}
-
 .header__link {
     padding: 0 15px;
-    text-transform: uppercase;
+    transition: 500ms;
 }
 
 .header__link:hover {
     color: var(--hover);
-    transition: 500ms;
 }
 
 .header__banner {
@@ -183,7 +186,6 @@ body {
 
 .cards .container {
     display: flex;
-    max-width: unset;
     padding: unset;
     /* не понятно, у макета width 100процентов или имеет фиксированную ширину 1400пкс? */
     /* если оно фиксирован то тут max-width нужно убрать т.к сам контейнер на вверху установлен max-width: 1400px! а также убрать padding*/
@@ -280,34 +282,16 @@ body {
     justify-content: center;
 }
 
-.footer__nav {
-    display: flex;
-    max-width: 1210px;
-    width: 100%;
-    justify-content: space-between;
-    padding: 20px 0 15px;
-    position: relative;
-}
-
-.footer__logo {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
 .footer__logo span {
     text-transform: uppercase;
     color: var(--white);
 }
 
 .footer__list {
-    display: flex;
-    align-items: center;
     column-gap: 15px;
 }
 
 .footer__link {
-    text-transform: uppercase;
     color: var(--white);
 }
 
