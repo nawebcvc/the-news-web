@@ -154,12 +154,12 @@ body {
 }
 
 .header__link {
-    padding: 43px 15px 42px;
+    padding: 0 15px;
     text-transform: uppercase;
 }
 
 .header__link:hover {
-    color: var(--white);
+    color: var(--hover);
     transition: 500ms;
 }
 
@@ -171,6 +171,10 @@ body {
 
 .header__mobile-img {
     display: none;
+}
+
+.main {
+    margin-bottom: 50px;
 }
 
 .cards {
@@ -264,4 +268,50 @@ body {
 
 .block__title {
     margin-bottom: 30px;
+}
+
+.footer {
+    background: var(--not-black);
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__nav {
+    display: flex;
+    max-width: 1210px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0 15px;
+    position: relative;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__logo span {
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.footer__link {
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.footer__link:hover {
+    color: var(--hover);
+    transition: 500ms;
 }
