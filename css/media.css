@@ -24,13 +24,11 @@
     .header__menu:focus~.header__list {
         transform: translateX(0);
         background: url(../img/header-list.png);
-        /* или вариант с цветом: #ef4f2371 */
     }
 
     .header__link {
         position: static;
         padding: 12px 30px;
-        /* padding - просто мне понравилось */
     }
 
     .header__link:hover {
@@ -106,8 +104,6 @@
 
     .cards .container {
         padding: 0 15px;
-        /* не понятно, у макета width 100процентов или имеет фиксированную ширину 1400пкс? */
-        /* ТУТ PADDING НЕ НАДО УБИРАТЬ, В МОБИЛЬНОЙ ВЕРСИИ ДИЗАЙН-КРАСОТА ЛОМАЕТСЯ :D */
     }
 
     .news__bg {
@@ -116,7 +112,6 @@
 
     .block__desc-desktop {
         display: none;
-        /* из-за слишком много текста */
     }
     
 }

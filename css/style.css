@@ -187,8 +187,6 @@ body {
 .cards .container {
     display: flex;
     padding: unset;
-    /* не понятно, у макета width 100процентов или имеет фиксированную ширину 1400пкс? */
-    /* если оно фиксирован то тут max-width нужно убрать т.к сам контейнер на вверху установлен max-width: 1400px! а также убрать padding*/
 }
 
 .card {
@@ -196,8 +194,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    /* не понятно, у макета width 100процентов или имеет фиксированную ширину 1400пкс? */
-    /* если оно фиксирован то тут max-width: 350; должен быть! */
 }
 
 .card__img {
@@ -235,7 +231,6 @@ body {
 
 .news .container {
     padding: unset;
-    /* убрать padding если макет имеет фиксированную ширину */
 }
 
 .news__bg {
@@ -252,7 +247,6 @@ body {
 .news__block {
     display: flex;
     max-width: 1125px;
-    /* убрать padding если макет имеет фиксированную ширину */
     width: 100%;
 }
 
@@ -263,7 +257,6 @@ body {
 
 .news__block-desc {
     max-width: 540px;
-    /* убрать max-width если макет имеет фиксированную ширину */
     width: 100%;
     padding: 20px 0 31px;
 }
